@@ -73,18 +73,7 @@ kubectl delete service service_name
 
 
 minikube service pythonweb-service --> without this servicde i was unable to access it in the browser of my system was only able to access inside minikube 
-running above produces below output and wen i do ctrl c the browser cant access minikube ip again 
-|-----------|-------------------|-------------|---------------------------|
-| NAMESPACE |       NAME        | TARGET PORT |            URL            |
-|-----------|-------------------|-------------|---------------------------|
-| default   | pythonweb-service |        8080 | http://192.168.49.2:31269 |
-|-----------|-------------------|-------------|---------------------------|
-🏃  Starting tunnel for service pythonweb-service.
-|-----------|-------------------|-------------|------------------------|
-| NAMESPACE |       NAME        | TARGET PORT |          URL           |
-|-----------|-------------------|-------------|------------------------|
-| default   | pythonweb-service |             | http://127.0.0.1:55690 |
-|-----------|-------------------|-------------|------------------------|
+
 🎉  Opening service default/pythonweb-service in default browser...
 ❗  Because you are using a Docker driver on windows, the terminal needs to be open to run it.
 ✋  Stopping tunnel for service pythonweb-service.
@@ -122,3 +111,4 @@ helm  list -> command to check the installed releases
 helm uninstall pyhelmwebapp -> to uninstall the release 
 
 
+git commit --amend -m "python web service" -> command to ammend the commit message 
